@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,29 +6,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MMT | Futuristic Developer</title>
+<title>MMT Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<canvas id="particles"></canvas>
-
-<header>
+<header id="header">
 
 <div class="logo">MMT</div>
 
 <nav>
 
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
-<a href="#hosting">Hosting</a>
+<a href="#vps">VPS Services</a>
+<a href="#discord">Discord</a>
 <a href="#contact">Contact</a>
 
 </nav>
@@ -36,93 +32,55 @@
 </header>
 
 
-<section id="home" class="hero">
+<section class="hero">
 
-<div class="code-editor">
+<div class="card">
 
-<div class="editor-header">
-<span class="red"></span>
-<span class="yellow"></span>
-<span class="green"></span>
-</div>
+<div class="overlay"></div>
 
-<pre id="code"></pre>
+<img class="character" src="https://wallpaperaccess.com/full/84248.jpg">
 
-</div>
+<div class="content">
 
-<div class="hero-content">
+<div class="left">
 
-<h1>Next-Gen Web Developer</h1>
+<h3>Developer</h3>
 
-<p>3+ Years Experience • Web Developer • Minecraft Server Hosting</p>
-
-<a href="#contact" class="btn">Hire Me</a>
-
-</div>
-
-</section>
-
-
-<section id="about">
-
-<h2>About Me</h2>
+<h1>MMT</h1>
 
 <p>
-
-I am a passionate developer with 3+ years of experience building
-modern web platforms, tools, and Minecraft server hosting solutions.
-
+Web Developer with 3+ years experience building modern websites,
+automation tools and providing affordable Minecraft VPS hosting.
 </p>
 
-</section>
-
-
-<section id="skills">
-
-<h2>Skills</h2>
-
-<div class="skill">
-<p>HTML</p>
-<div class="bar"><div class="progress html"></div></div>
 </div>
 
-<div class="skill">
-<p>CSS</p>
-<div class="bar"><div class="progress css"></div></div>
 </div>
 
-<div class="skill">
-<p>JavaScript</p>
-<div class="bar"><div class="progress js"></div></div>
-</div>
-
-<div class="skill">
-<p>Python</p>
-<div class="bar"><div class="progress python"></div></div>
 </div>
 
 </section>
 
 
-<section id="projects">
+<section id="projects" class="section">
 
 <h2>Projects</h2>
 
-<div class="projects">
+<div class="grid">
 
-<div class="card">
-<h3>Math Quiz Game</h3>
-<p>Interactive multiplayer math learning platform</p>
+<div class="box">
+<h3>Math Quiz Platform</h3>
+<p>Interactive math learning game with ranking system.</p>
 </div>
 
-<div class="card">
+<div class="box">
 <h3>OSINT Email Checker</h3>
-<p>Cybersecurity tool checking accounts across websites</p>
+<p>Tool to detect email accounts across multiple websites.</p>
 </div>
 
-<div class="card">
+<div class="box">
 <h3>AI Desktop Assistant</h3>
-<p>Voice-controlled automation assistant</p>
+<p>Voice controlled automation assistant.</p>
 </div>
 
 </div>
@@ -130,25 +88,25 @@ modern web platforms, tools, and Minecraft server hosting solutions.
 </section>
 
 
-<section id="hosting">
+<section id="vps" class="section">
 
-<h2>Minecraft VPS Hosting</h2>
+<h2>VPS Services</h2>
 
-<div class="pricing">
+<div class="grid">
 
-<div class="plan">
+<div class="box">
 <h3>Starter</h3>
-<p>$3/month</p>
+<p>$3 / month</p>
 </div>
 
-<div class="plan">
+<div class="box">
 <h3>Pro</h3>
-<p>$7/month</p>
+<p>$7 / month</p>
 </div>
 
-<div class="plan">
+<div class="box">
 <h3>Ultimate</h3>
-<p>$12/month</p>
+<p>$12 / month</p>
 </div>
 
 </div>
@@ -156,9 +114,20 @@ modern web platforms, tools, and Minecraft server hosting solutions.
 </section>
 
 
-<section id="contact">
+<section id="discord" class="section">
 
-<h2>Contact Me</h2>
+<h2>Discord</h2>
+
+<p>Join my community for support and hosting services.</p>
+
+<a class="btn" href="#">Join Discord</a>
+
+</section>
+
+
+<section id="contact" class="section">
+
+<h2>Contact</h2>
 
 <form>
 
@@ -175,24 +144,6 @@ modern web platforms, tools, and Minecraft server hosting solutions.
 </section>
 
 
-<div class="chatbot">
-
-<h4>AI Assistant</h4>
-
-<div id="chatbox"></div>
-
-<input id="chatInput" placeholder="Ask something...">
-
-</div>
-
-
-<footer>
-
-<p>© 2026 MMT Developer Portfolio</p>
-
-</footer>
-
-<script src="particles.js"></script>
 <script src="script.js"></script>
 
 </body>
