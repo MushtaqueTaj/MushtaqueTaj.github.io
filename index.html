@@ -1,471 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Developer Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-color:white;
-background:black;
-overflow-x:hidden;
-}
-
-/* NAVBAR */
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 8%;
-background:rgba(0,0,0,0.4);
-backdrop-filter:blur(12px);
-z-index:1000;
-}
-
-nav h2{
-font-weight:600;
-letter-spacing:1px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#9c7bff;
-}
-
-/* HERO */
-
-.hero{
-
-height:100vh;
-
-background:
-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
-url("https://img.freepik.com/free-photo/anime-style-galaxy-background_23-2151134130.jpg?semt=ais_rp_50_assets&w=740&q=80");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
-
-}
-
-.hero h1{
-
-font-size:60px;
-margin-bottom:10px;
-
-}
-
-.typing{
-color:#9c7bff;
-}
-
-.hero p{
-font-size:18px;
-opacity:0.9;
-}
-
-.buttons{
-margin-top:30px;
-}
-
-.btn{
-
-padding:14px 28px;
-margin:10px;
-border-radius:30px;
-border:none;
-cursor:pointer;
-font-size:16px;
-transition:0.3s;
-text-decoration:none;
-display:inline-block;
-
-}
-
-.btn-primary{
-
-background:#7b5cff;
-color:white;
-box-shadow:0 0 15px #7b5cff;
-
-}
-
-.btn-primary:hover{
-
-transform:translateY(-3px);
-box-shadow:0 0 25px #7b5cff;
-
-}
-
-.btn-discord{
-
-background:#5865F2;
-color:white;
-
-}
-
-.btn-discord:hover{
-
-background:#404eed;
-transform:scale(1.05);
-
-}
-
-/* SECTION */
-
-section{
-
-padding:100px 8%;
-max-width:1200px;
-margin:auto;
-
-}
-
-h2{
-
-font-size:35px;
-margin-bottom:30px;
-text-align:center;
-
-}
-
-/* SKILLS */
-
-.skills{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
-
-}
-
-.skill{
-
-background:rgba(255,255,255,0.05);
-padding:25px;
-border-radius:12px;
-text-align:center;
-transition:0.4s;
-border:1px solid rgba(255,255,255,0.1);
-
-}
-
-.skill:hover{
-
-transform:translateY(-8px) scale(1.05);
-background:rgba(255,255,255,0.08);
-box-shadow:0 0 15px #7b5cff;
-
-}
-
-/* PROJECTS */
-
-.projects{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-
-}
-
-.project{
-
-background:rgba(255,255,255,0.05);
-padding:25px;
-border-radius:12px;
-transition:0.4s;
-border:1px solid rgba(255,255,255,0.1);
-
-}
-
-.project:hover{
-
-transform:translateY(-10px);
-box-shadow:0 0 20px #7b5cff;
-
-}
-
-/* CONTACT */
-
-.contact-form{
-
-max-width:500px;
-margin:auto;
-
-}
-
-.contact-form input,
-.contact-form textarea{
-
-width:100%;
-padding:14px;
-margin:10px 0;
-border-radius:8px;
-border:none;
-background:#111;
-color:white;
-
-}
-
-.contact-form button{
-
-width:100%;
-padding:14px;
-background:#7b5cff;
-border:none;
-border-radius:8px;
-font-size:16px;
-cursor:pointer;
-transition:0.3s;
-
-}
-
-.contact-form button:hover{
-
-background:#6245ff;
-
-}
-
-/* FOOTER */
-
-footer{
-
-text-align:center;
-padding:30px;
-background:#050505;
-margin-top:60px;
-opacity:0.8;
-
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:38px;
-}
-
-nav{
-flex-direction:column;
-}
-
-nav a{
-margin:10px;
-}
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mushtaque | Digital Architect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav>
-
-<h2>DevPortfolio</h2>
-
-<div>
-
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-
-</div>
-
-</nav>
-
-
-<div class="hero">
-
-<div>
-
-<h1>I Am <span class="typing"></span></h1>
-
-<p>3+ Years Experience • HTML • CSS • JS • Python</p>
-
-<div class="buttons">
-
-<a href="#projects" class="btn btn-primary">View Projects</a>
-
-<a href="#" class="btn btn-discord">Discord</a>
-
-</div>
-
-</div>
-
-</div>
-
-
-<section id="about">
-
-<h2>About Me</h2>
-
-<p style="text-align:center;max-width:700px;margin:auto;line-height:1.7">
-
-I am a passionate developer with 3 years of coding experience.
-I specialize in building interactive web applications using HTML, CSS,
-JavaScript and Python. I also enjoy creating automation tools,
-Discord bots and AI systems.
-
-</p>
-
-</section>
-
-
-<section id="skills">
-
-<h2>Skills</h2>
-
-<div class="skills">
-
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">Python</div>
-<div class="skill">Web Development</div>
-<div class="skill">Automation</div>
-
-</div>
-
-</section>
-
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="projects">
-
-<div class="project">
-<h3>Math Quiz Website</h3>
-<p>Interactive math quiz website with levels, timer and ranking system.</p>
-</div>
-
-<div class="project">
-<h3>Python AI Assistant</h3>
-<p>Desktop assistant that can automate tasks and perform web search.</p>
-</div>
-
-<div class="project">
-<h3>Discord Bot</h3>
-<p>Advanced moderation and automation bot for Discord servers.</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<div class="contact-form">
-
-<form>
-
-<input type="text" placeholder="Your Name" required>
-
-<input type="email" placeholder="Email" required>
-
-<textarea rows="5" placeholder="Message"></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
-
-</div>
-
-</section>
-
-
-<footer>
-
-© 2026 Developer Portfolio
-
-</footer>
-
-
-<script>
-
-/* TYPING ANIMATION */
-
-const text = ["Developer","Web Designer","Python Programmer","Discord Bot Dev"]
-
-let i = 0
-let j = 0
-let current = ""
-let isDeleting = false
-
-function type(){
-
-current = text[i]
-
-if(isDeleting){
-
-j--
-}else{
-j++
-}
-
-document.querySelector(".typing").textContent = current.substring(0,j)
-
-if(!isDeleting && j == current.length){
-
-isDeleting = true
-setTimeout(type,1000)
-return
-
-}else if(isDeleting && j == 0){
-
-isDeleting = false
-i++
-
-if(i == text.length){
-i = 0
-}
-
-}
-
-setTimeout(type,120)
-
-}
-
-type()
-
-</script>
-
+    <canvas id="particle-canvas"></canvas>
+    <div id="progress-container"><div id="progress-bar"></div></div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">M<span>.</span></div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-item">Home</a></li>
+                    <li><a href="#works" class="nav-item">Works</a></li>
+                    <li><a href="#contact" class="nav-item">Connect</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></div>
+                        </label>
+                    </div>
+                    <a href="mailto:hello@mushtaque.com" class="nav-cta">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-modern">
+        <div class="hero-bg-media">
+            <img src="https://images.unsplash.com/photo-1618336753974-aae8e04506aa?q=80&w=1600" alt="Background" class="bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <span class="hero-eyebrow">Digital Architect & Designer</span>
+            <h1 class="hero-name">MUSHTAQUE<span class="dot">.</span></h1>
+            <p class="hero-description">
+                Building <span id="typing-text"></span> that blend <span class="highlight">logic</span> with <span class="highlight">aesthetics</span>.
+            </p>
+            <div class="hero-btns">
+                <a href="#works" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-outline">Let's Talk</a>
+            </div>
+        </div>
+
+        <div class="hero-footer">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">SCROLL</span>
+        </div>
+    </section>
+
+    <section id="works" class="container">
+        <h2 class="section-title">SELECTED <span class="reveal">WORKS</span></h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600" alt="Work 1">
+                    <div class="project-overlay"><h3>Nexus UI</h3></div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=600" alt="Work 2">
+                    <div class="project-overlay"><h3>Aura App</h3></div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=600" alt="Work 3">
+                    <div class="project-overlay"><h3>Vortex Case</h3></div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600" alt="Work 4">
+                    <div class="project-overlay"><h3>Data Dash</h3></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-title">GET IN <span class="reveal">TOUCH</span></h2>
+        <div class="connect-grid">
+            <div class="connect-card">
+                <div class="card-info">
+                    <i class="fab fa-discord"></i>
+                    <div><h3>Discord</h3><p>Mushtaque#0000</p></div>
+                </div>
+                <button class="action-btn copy-btn" onclick="copyToClipboard('Mushtaque#0000')">Copy</button>
+            </div>
+            <div class="connect-card">
+                <div class="card-info">
+                    <i class="fas fa-envelope"></i>
+                    <div><h3>Email</h3><p>hello@mushtaque.com</p></div>
+                </div>
+                <a href="mailto:hello@mushtaque.com" class="action-btn email-btn">Mail</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-line"></div>
+        <p>&copy; 2026 Mushtaque. Build with passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
